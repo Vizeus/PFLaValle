@@ -1,0 +1,173 @@
+// Variables
+$primary-color: #735134;
+$secondary-color: #d2d5d9;
+$link-color: black;
+$link-hover-color: #909295;
+$navbar-background-color: $secondary-color;
+$navbar-border-color: black;
+$navbar-button-color: #364959; 
+$footer-background-color: grey;
+$footer-text-color: white;
+
+// Importación de archivos SCSS
+@import "LogIn";
+@import "Explorador";
+@import "Index";
+@import "filtro";
+
+// Estilos generales
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+// Estilo del body
+#custom-body {
+  font-family: 'Kanit', sans-serif;
+  background-image: linear-gradient($primary-color, $secondary-color);
+}
+
+// Estilo de los enlaces
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Estilo del navbar
+#navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "nav";
+  align-items: center;
+  background-color: $navbar-background-color;
+  border: 2px solid $navbar-border-color;
+  padding: 10px;
+  z-index: 100;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    grid-area: title;
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  nav {
+    grid-area: nav;
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        transform: translate(0px, 0px);
+        transition: all 0.3s;
+        color: white;
+
+        &:hover {
+          transform: translate(0px, 2px);
+          border: 2px outset #aac7cef5;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: inherit;
+          display: block;
+          padding: 10px;
+          background-color: $navbar-button-color;
+
+          &.linkNavItem2 {
+            color: $link-hover-color;
+          }
+        }
+
+        .listaOculta {
+          display: none;
+          position: absolute;
+          background-color: $navbar-button-color;
+          margin: 0;
+          padding: 10px;
+          top: 100%;
+          left: 0;
+          width: 100%;
+
+          li {
+            a {
+              color: inherit;
+              text-decoration: inherit;
+              background-color: $secondary-color;
+              color: black;
+            }
+          }
+        }
+
+        &:hover > .listaOculta {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Estilo del pie de página
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+
+  div {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Uso de @each y maps */
+$font-sizes: (
+  small: 12px,
+  medium: 16px,
+  large: 20px
+);
+
+@each $name, $size in $font-sizes {
+  .#{$name} {
+    font-size: $size;
+  }
+}
+
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  link: $link-color,
+  link-hover: $link-hover-color,
+  navbar-background: $navbar-background-color,
+  navbar-border: $navbar-border-color,
+  navbar-button: $navbar-button-color,
+  footer-background: $footer-background-color,
+  footer-text: $footer-text-color
+);
+
+@each $name, $color in $colors {
+  .#{$name}-color {
+    color: $color;
+  }
+}
+
+

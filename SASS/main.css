@@ -1,0 +1,403 @@
+@charset "UTF-8";
+.container {
+  margin-top: 5rem;
+  margin-bottom: 11rem;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-top: 12em;
+  margin-bottom: 300px;
+}
+.container .login-form {
+  background-color: #e6e6e6;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  width: 400px;
+}
+.container .login-form h2 {
+  margin-bottom: 1rem;
+}
+.container .login-form form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.container .login-form form .form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+.container .login-form form .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.container .login-form form .checkbox-group input[type=checkbox] {
+  margin-right: 0.3rem;
+}
+.container .login-form form .checkbox-group label {
+  margin-bottom: 0;
+}
+.container .login-form form .boton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  border: none;
+}
+
+/* Cuerpo del explorador */
+#grilla {
+  display: grid;
+  grid-template-areas: ". header ." "arteYDiseño idiomas marketing" "arteYDiseño idiomas marketing" "programación sonido videojuegos" "programación sonido videojuegos"; /* Fila 4 */
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: 3fr 3fr 3fr;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 60vh;
+  margin-top: 10em;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+#grilla .celda {
+  background-color: #364959;
+  color: white;
+  text-align: center;
+}
+#grilla #titulo {
+  grid-area: header;
+}
+#grilla #arteYDiseño {
+  grid-area: arteYDiseño;
+}
+#grilla #arteYDiseño section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla #idiomas {
+  grid-area: idiomas;
+}
+#grilla #idiomas section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla #marketing {
+  grid-area: marketing;
+}
+#grilla #marketing section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla #programación {
+  grid-area: programación;
+}
+#grilla #programación section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla #sonido {
+  grid-area: sonido;
+}
+#grilla #sonido section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla #videojuegos {
+  grid-area: videojuegos;
+}
+#grilla #videojuegos section {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#grilla nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#grilla .bg-custom {
+  background-color: #735134;
+}
+@media (min-width: 600px) and (max-width: 1400px) {
+  #grilla {
+    /* Estilos para pantallas medianas */
+    display: grid;
+    grid-template-areas: ". header header ." "arteYDiseño arteYDiseño idiomas idiomas" "marketing marketing programación programación" "sonido sonido videojuegos videojuegos";
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    height: 60vh;
+    margin: 50px;
+    margin-bottom: 200px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* Estilos para pantallas pequeñas */
+  #grilla {
+    display: grid;
+    grid-template-areas: "header" "arteYDiseño" "idiomas" "marketing" "programación" "sonido" "videojuegos";
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    height: 60vh;
+    margin: 30px;
+    margin-bottom: 530px;
+    font-size: 11px;
+  }
+}
+/* Estilo compartido */
+/* Estilo de la imagen principal y el buscador */
+#contenedorImagen {
+  position: relative;
+  margin-top: 7.37em;
+}
+#contenedorImagen #imagenHome {
+  width: 100%;
+  height: 500px;
+}
+#contenedorImagen #buscador {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Estilo del cuerpo */
+#cuerpo {
+  display: grid;
+  grid-template-areas: ". irAlExplorador ." "textoPrincipal textoPrincipal textoPrincipal" "subcategoriaDestacada categoriaDestacada plataformaDestacada" "textoFinal textoFinal textoFinal";
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: 3fr 3fr 3fr;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 60vh;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+#cuerpo .celdaIndex {
+  background-color: #d2d5d9;
+  color: white;
+  color: black;
+  text-align: center;
+}
+#cuerpo #irAlExplorador {
+  grid-area: irAlExplorador;
+  color: 0;
+}
+#cuerpo #irAlExplorador header {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+#cuerpo #textoPrincipal {
+  grid-area: textoPrincipal;
+  font-size: 13px;
+}
+#cuerpo #subcategoriaDestacada {
+  grid-area: subcategoriaDestacada;
+}
+#cuerpo #categoriaDestacada {
+  grid-area: categoriaDestacada;
+}
+#cuerpo #plataformaDestacada {
+  grid-area: plataformaDestacada;
+}
+#cuerpo #textoFinal {
+  grid-area: textoFinal;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+}
+#cuerpo .imagenDeDestacados {
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Estilo del cuerpo para pantallas pequeñas */
+@media (max-width: 650px) {
+  #cuerpo {
+    display: grid;
+    grid-template-areas: "irAlExplorador" "textoPrincipal" "subcategoriaDestacada" "categoriaDestacada" "plataformaDestacada" "textoFinal";
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    height: 60vh;
+    margin: 30px;
+    margin-bottom: 530px;
+    font-size: 11px;
+  }
+}
+#cuerpoDelFiltro {
+  margin-top: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+#custom-body {
+  font-family: "Kanit", sans-serif;
+  background-image: linear-gradient(#735134, #d2d5d9);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "title" "nav";
+  align-items: center;
+  background-color: #d2d5d9;
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 100;
+}
+#navBar h1 {
+  margin: 0;
+  text-align: center;
+  grid-area: title;
+}
+#navBar h1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#navBar nav {
+  grid-area: nav;
+}
+#navBar nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+#navBar nav ul li {
+  position: relative;
+  transform: translate(0px, 0px);
+  transition: all 0.3s;
+  color: white;
+}
+#navBar nav ul li:hover {
+  transform: translate(0px, 2px);
+  border: 2px outset rgba(170, 199, 206, 0.9607843137);
+}
+#navBar nav ul li a {
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+  padding: 10px;
+  background-color: #364959;
+}
+#navBar nav ul li a.linkNavItem2 {
+  color: #909295;
+}
+#navBar nav ul li .listaOculta {
+  display: none;
+  position: absolute;
+  background-color: #364959;
+  margin: 0;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+#navBar nav ul li .listaOculta li a {
+  color: inherit;
+  text-decoration: inherit;
+  background-color: #d2d5d9;
+  color: black;
+}
+#navBar nav ul li:hover > .listaOculta {
+  display: block;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+footer div {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Uso de @each y maps */
+.small {
+  font-size: 12px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.primary-color {
+  color: #735134;
+}
+
+.secondary-color {
+  color: #d2d5d9;
+}
+
+.link-color {
+  color: black;
+}
+
+.link-hover-color {
+  color: #909295;
+}
+
+.navbar-background-color {
+  color: #d2d5d9;
+}
+
+.navbar-border-color {
+  color: black;
+}
+
+.navbar-button-color {
+  color: #364959;
+}
+
+.footer-background-color {
+  color: grey;
+}
+
+.footer-text-color {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
