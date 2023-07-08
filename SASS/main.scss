@@ -137,6 +137,16 @@ footer {
   div {
     background-color: rgba(0, 0, 0, 0.2);
   }
+
+  /* Estilo del cuerpo para pantallas pequeñas */
+  @media (max-width: 650px) {
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 46rem;
+  }
 }
 
 /* Uso de @each y maps */

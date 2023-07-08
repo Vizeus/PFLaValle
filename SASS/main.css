@@ -348,9 +348,20 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 12px;
+  /* Estilo del cuerpo para pantallas pequeñas */
 }
 footer div {
   background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 650px) {
+  footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 46rem;
+  }
 }
 
 /* Uso de @each y maps */
