@@ -8,9 +8,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS link -->
-    <link rel="stylesheet" href="../SASS/main.css">
 
     <!-- Animate CSS link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -33,183 +30,367 @@
     <!-- Keywords -->
     <meta name="keywords" content="Cursos Online, Cursos, Online, Educacion, Programacion, Diseño, Marketing, Estudio, Autodidacta, Español, Aprendizaje, Aprender">
 
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../SASS/main.css">
+
 </head>
 
-<body id="custom-body">
+<body id="custom-body" class="animate__animated animate__fadeIn animate__fast">
 
-    <!-- Navbar -->
-    <header id="navBar">
+  <!-- Navbar -->
+  <header id="navBar">
 
-      <h1>
-        <a href="../index.html" id="titulo">Cursos Online</a>
-      </h1>
+    <h1>
+      <a href="../index.html" id="titulo">Cursos Online</a>
+    </h1>
 
-      <nav>
+    <nav>
 
-        <ul>
+      <ul>
 
-          <li class="navBarItem">
+        <li class="navBarItem">
 
-            <a class="linkNavItem" href="../index.html">Home</a>
+          <a class="linkNavItem" href="../index.html">Home</a>
 
-          </li>
+        </li>
 
-          <li class="navBarItem">
+        <li class="navBarItem">
 
-            <a class="linkNavItem" href="./filtro.html">Cursos</a>
+          <a class="linkNavItem" href="./filtro.html">Cursos</a>
 
-            <ul class="listaOculta">
+          <ul class="listaOculta">
 
-              <li>
-                <a class="linkNavItem" href="./filtro.html">Filtro de cursos</a>
-              </li>
+            <li>
+              <a class="linkNavItem" href="./filtro.html">Filtro de cursos</a>
+            </li>
 
-              <li>
-                <a class="linkNavItem" href="./explorador.html">Cursos de Iniciación</a>
-              </li>
+            <li>
+              <a class="linkNavItem" href="./explorador.html">Cursos de Iniciación</a>
+            </li>
 
-              <li>
+            <li>
 
-                <a class="linkNavItem" href="./explorador.html">Categorías</a>
+              <a class="linkNavItem" href="./explorador.html">Categorías</a>
 
-                <ul class="listaOculta">
+              <ul class="listaOculta">
 
-                  <li><a class="linkNavItem2" href="./explorador.html">Arte y Diseño</a></li>
-                  <li><a class="linkNavItem2" href="./explorador.html">Idiomas</a></li>
-                  <li><a class="linkNavItem2" href="./explorador.html">Marketing</a></li>
-                  <li><a class="linkNavItem2" href="./explorador.html">Programación</a></li>
-                  <li><a class="linkNavItem2" href="./explorador.html">Sonido</a></li>
-                  <li><a class="linkNavItem2" href="./explorador.html">Videojuegos</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Arte y Diseño</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Idiomas</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Marketing</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Programación</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Sonido</a></li>
+                <li><a class="linkNavItem2" href="./explorador.html">Videojuegos</a></li>
 
-                </ul>
+              </ul>
 
-              </li>
+            </li>
 
-            </ul>
+          </ul>
 
-          </li>
+        </li>
 
-          <li class="navBarItem">
+        <li class="navBarItem">
 
-            <a class="linkNavItem" href="./LogIn.html">Perfil</a>
+          <a class="linkNavItem" href="./LogIn.html">Perfil</a>
 
-            <ul class="listaOculta">
-              <li><a class="linkNavItem" href="./LogIn.html">Mis favoritos</a></li>
-            </ul>
+          <ul class="listaOculta">
+            <li><a class="linkNavItem" href="./LogIn.html">Mis favoritos</a></li>
+          </ul>
 
-          </li>
+        </li>
 
-        </ul>
+      </ul>
 
-      </nav>
+    </nav>
 
-    </header>
+  </header>
 
-    <!-- Grilla -->
-    
-    <div id="cuerpoDelFiltro">
+  <!-- Cuerpo y grilla -->
+  <div id="cuerpoDelFiltro"> <!-- Caja de la grilla y el cuerpo de la página -->
+
+    <header> <!-- Caja encabezado -->
+
+      <section>
+        <h2>Filtro de Cursos Online</h2>
+      </section>
+
+      <section>
+        <p>Todos los cursos son online y en español, hablado o subtitulado</p>
+      </section>
+
+    </header>  
+
+    <div> <!-- Caja de pago -->
+
+      <section>
+        <form>
+          <label for="pago">De Pago:</label>
+          <input type="radio" name="pago" id="si">
+          <label for="si">Si</label>
+          <input type="radio" name="pago" id="no">
+          <label for="no">No</label>
+          <input type="radio" name="pago" id="indistinto" checked>
+          <label for="indistinto">Indistinto</label>
+        </form>
+      </section>
+          
+    </div>
+
+    <div> <!-- Caja modalidad -->
+
+      <section>
+        <form>
+          <label for="modalidad">Modalidad:</label>
+          <input type="radio" name="modalidad" id="en-vivo">
+          <label for="en-vivo">En vivo</label>
+          <input type="radio" name="modalidad" id="grabado">
+          <label for="grabado">Grabado</label>
+          <input type="radio" name="modalidad" id="hibrido">
+          <label for="hibrido">Híbrido</label>
+          <input type="radio" name="modalidad" id="modalidad-indistinto" checked>
+          <label for="modalidad-indistinto">Indistinto</label>
+        </form>
+      </section>
+          
+    </div>
+
+    <div> <!-- Caja contenedora de los 4 cuadros -->
+
+      <div> <!-- Caja plataformas -->
 
         <div>
 
-            <section>
-                <h2>Filtro de Cursos Online</h2>
-            </section>
-
-            <section>
-                <p>Todos los cursos son online y en español (hablado o subtitulado)</p>
-            </section>
-
-        </div>  
-
-        <div>
-
-            <section>
-                <form action="get" enctype="text/plain">
-                    <label for="">De Pago:</label>
-                    <input type="radio" name="curso" id="si"> Si
-                    <input type="radio" name="curso" id="no"> No
-                    <input type="radio" name="curso" id="no"> Indistinto
-                </form>
-            </section>
-            
-        </div>
-
-        <div>
-
-            <section>
-                <form action="get" enctype="text/plain">
-                    <label for="">Modalidad:</label>
-                    <input type="radio" name="curso" id="si"> En vivo
-                    <input type="radio" name="curso" id="no"> Grabado
-                    <input type="radio" name="curso" id="no"> Híbrido
-                    <input type="radio" name="curso" id="no"> Indistinto
-                </form>
-            </section>
-            
-        </div>
-
-        <div>
-
-            <div>
-
-                <section>
-                    <h3>Plataforma</h3>
-                </section>
+          <section>
+            <h3>Plataforma</h3>
+          </section>
                 
-            </div>
-            
-
-            <div>
-
-                <section>
-                    <form action="get" enctype="text/plain">
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                        <input type="checkbox" name="1"> Newsletters
-                    </form>
-                </section>
-
-            </div>
-
-            
         </div>
 
+        <div>
 
+          <section>
+            <form>
+              <input type="checkbox" name="plataforma" id="brilliant">
+              <label for="brilliant">Brilliant</label>
+              <input type="checkbox" name="plataforma" id="coderhouse">
+              <label for="coderhouse">CoderHouse</label>
+              <input type="checkbox" name="plataforma" id="crehana">
+              <label for="crehana">Crehana</label>
+              <input type="checkbox" name="plataforma" id="domestika">
+              <label for="domestika">Domestika</label>
+              <input type="checkbox" name="plataforma" id="google-activate">
+              <label for="google-activate">Google Activate</label>
+              <input type="checkbox" name="plataforma" id="platzi">
+              <label for="platzi">Platzi</label>
+              <input type="checkbox" name="plataforma" id="skillshare">
+              <label for="skillshare">Skillshare</label>
+              <input type="checkbox" name="plataforma" id="udemy">
+              <label for="udemy">Udemy</label>
+              <input type="checkbox" name="plataforma" id="youtube">
+              <label for="youtube">YouTube</label>
+            </form>
+          </section>
 
+        </div>
 
+      </div>
 
+      <div> <!-- Caja categorías -->
 
+        <div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>          
-    
-
-    <!-- Footer -->
-    <footer>
+          <section>
+            <h3>Categoría</h3>
+          </section>
+          
+        </div>
       
         <div>
-          © 2023 Cursos Online:
-          <a href="https://mdbootstrap.com/">cursosonline.com</a>
+
+          <section>
+            <form>
+              <input type="checkbox" name="categoria" id="arte-diseno">
+              <label for="arte-diseno">Arte y Diseño</label>
+              <input type="checkbox" name="categoria" id="idiomas">
+              <label for="idiomas">Idiomas</label>
+              <input type="checkbox" name="categoria" id="marketing">
+              <label for="marketing">Marketing</label>
+              <input type="checkbox" name="categoria" id="programacion">
+              <label for="programacion">Programación</label>
+              <input type="checkbox" name="categoria" id="sonido">
+              <label for="sonido">Sonido</label>
+              <input type="checkbox" name="categoria" id="videojuegos">
+              <label for="videojuegos">Videojuegos</label>
+            </form>
+          </section>
+
         </div>
 
-    </footer>
+      </div>
+
+      <div> <!-- Caja subcategorías -->
+
+        <div>
+
+          <section>
+            <h3>Subcategoría</h3>
+          </section>
+        
+        </div>
+
+        <div>
+
+          <section> 
+
+            <form> <!-- Estas irían cambiando dinámicamente según las categorías que el usuario elija -->
+
+              <h4>Arte y Diseño</h4>
+              <input type="checkbox" name="subcategoria" id="adobe-photoshop">
+              <label for="adobe-photoshop">Adobe Photoshop</label>
+              <input type="checkbox" name="subcategoria" id="adobe-illustrator">
+              <label for="adobe-illustrator">Adobe Illustrator</label>
+              <input type="checkbox" name="subcategoria" id="blender-3d">
+              <label for="blender-3d">Blender 3D</label>
+              <input type="checkbox" name="subcategoria" id="concept-art-dibujo-digital">
+              <label for="concept-art-dibujo-digital">Concept Art y Dibujo Digital</label>
+              <input type="checkbox" name="subcategoria" id="dibujo-lapiz">
+              <label for="dibujo-lapiz">Dibujo a Lápiz</label>
+              <input type="checkbox" name="subcategoria" id="dibujo-acuarelas">
+              <label for="dibujo-acuarelas">Dibujo con Acuarelas</label>
+
+              <h4>Idiomas</h4>
+              <input type="checkbox" name="subcategoria" id="aleman">
+              <label for="aleman">Alemán</label>
+              <input type="checkbox" name="subcategoria" id="chino">
+              <label for="chino">Chino</label>
+              <input type="checkbox" name="subcategoria" id="espanol">
+              <label for="espanol">Español</label>
+              <input type="checkbox" name="subcategoria" id="frances">
+              <label for="frances">Francés</label>
+              <input type="checkbox" name="subcategoria" id="ingles">
+              <label for="ingles">Inglés</label>
+              <input type="checkbox" name="subcategoria" id="italiano">
+              <label for="italiano">Italiano</label>
+              <input type="checkbox" name="subcategoria" id="japones">
+              <label for="japones">Japonés</label>
+              <input type="checkbox" name="subcategoria" id="portugues">
+              <label for="portugues">Portugués</label>
+
+              <h4>Marketing</h4>
+              <input type="checkbox" name="subcategoria" id="seo">
+              <label for="seo">SEO</label>
+              <input type="checkbox" name="subcategoria" id="redes-sociales">
+              <label for="redes-sociales">Redes Sociales</label>
+              <input type="checkbox" name="subcategoria" id="marketing-digital">
+              <label for="marketing-digital">Marketing Digital</label>
+              <input type="checkbox" name="subcategoria" id="email-marketing">
+              <label for="email-marketing">Email Marketing</label>
+              <input type="checkbox" name="subcategoria" id="analitica-web">
+              <label for="analitica-web">Analítica Web</label>
+              <input type="checkbox" name="subcategoria" id="publicidad-online">
+              <label for="publicidad-online">Publicidad Online</label>
+
+              <h4>Programación</h4>
+              <input type="checkbox" name="subcategoria" id="csharp">
+              <label for="csharp">C#</label>
+              <input type="checkbox" name="subcategoria" id="css">
+              <label for="css">CSS</label>
+              <input type="checkbox" name="subcategoria" id="desarrollo-web">
+              <label for="desarrollo-web">Desarrollo Web</label>
+              <input type="checkbox" name="subcategoria" id="html">
+              <label for="html">HTML</label>
+              <input type="checkbox" name="subcategoria" id="java">
+              <label for="java">Java</label>
+              <input type="checkbox" name="subcategoria" id="javascript">
+              <label for="javascript">JavaScript</label>
+              <input type="checkbox" name="subcategoria" id="python">
+              <label for="python">Python</label>
+
+              <h4>Sonido</h4>
+              <input type="checkbox" name="subcategoria" id="edicion-audio">
+              <label for="edicion-audio">Edición de Audio</label>
+              <input type="checkbox" name="subcategoria" id="flauta">
+              <label for="flauta">Flauta</label>
+              <input type="checkbox" name="subcategoria" id="guitarra">
+              <label for="guitarra">Guitarra</label>
+              <input type="checkbox" name="subcategoria" id="grabacion">
+              <label for="grabacion">Grabación</label>
+              <input type="checkbox" name="subcategoria" id="masterizacion">
+              <label for="masterizacion">Masterización</label>
+              <input type="checkbox" name="subcategoria" id="mezcla">
+              <label for="mezcla">Mezcla de Sonido</label>
+              <input type="checkbox" name="subcategoria" id="piano">
+              <label for="piano">Piano</label>
+              <input type="checkbox" name="subcategoria" id="produccion-musical">
+              <label for="produccion-musical">Producción Musical</label>
+
+              <h4>Videojuegos</h4>
+              <input type="checkbox" name="subcategoria" id="arte-juegos">
+              <label for="arte-juegos">Arte para Juegos</label>
+              <input type="checkbox" name="subcategoria" id="diseno-niveles">
+              <label for="diseno-niveles">Diseño de Niveles</label>
+              <input type="checkbox" name="subcategoria" id="game-design">
+              <label for="game-design">Game Design</label>
+              <input type="checkbox" name="subcategoria" id="programacion-juegos">
+              <label for="programacion-juegos">Programación de Juegos</label>
+              <input type="checkbox" name="subcategoria" id="realidad-virtual">
+              <label for="realidad-virtual">Realidad Virtual</label>
+              <input type="checkbox" name="subcategoria" id="testeo-juegos">
+              <label for="testeo-juegos">Testeo de Juegos</label>
+              <input type="checkbox" name="subcategoria" id="unity">
+              <label for="unity">Unity</label>
+              <input type="checkbox" name="subcategoria" id="unreal-engine">
+              <label for="unreal-engine">Unreal Engine</label>
+
+            </form>
+
+          </section>
+
+        </div>
+
+      </div>
+
+      <div> <!-- Caja resultados -->
+
+        <div>
+
+          <section>
+            <h3>Resultados (cursos específicos)</h3>
+          </section>
+        
+        </div>
+
+        <div>
+
+          <div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div> <!-- Caja del buscador -->
+      <input type="text" id="buscador" placeholder="Busca tu curso">
+    </div>
+
+    <div> <!-- Caja del botón del explorador -->
+      <a href="./explorador.html"><h3>Explorar todos los cursos</h3></a>
+    </div>
+
+  </div>      
+    
+  <!-- Footer -->
+  <footer>
+    
+      <div>
+        © 2023 Cursos Online:
+        <a href="https://mdbootstrap.com/">cursosonline.com</a>
+      </div>
+
+  </footer>
 
 </body>
 
