@@ -108,7 +108,7 @@
   <!-- Cuerpo y grilla -->
   <div id="cuerpoDelFiltro"> <!-- Caja de la grilla y el cuerpo de la página -->
 
-    <header> <!-- Caja encabezado -->
+    <header id="cajaHeader"> <!-- Caja encabezado -->
 
       <section>
         <h2>Filtro de Cursos Online</h2>
@@ -120,7 +120,7 @@
 
     </header>  
 
-    <div> <!-- Caja de pago -->
+    <div id="cajaDePago"> <!-- Caja de pago -->
 
       <section>
         <form>
@@ -136,7 +136,7 @@
           
     </div>
 
-    <div> <!-- Caja modalidad -->
+    <div id="cajaModalidad"> <!-- Caja modalidad -->
 
       <section>
         <form>
@@ -154,9 +154,9 @@
           
     </div>
 
-    <div> <!-- Caja contenedora de los 4 cuadros -->
+    <div id="cajaConteiner4Cuadros"> <!-- Caja contenedora de los 4 cuadros -->
 
-      <div> <!-- Caja plataformas -->
+      <div id="cajaPlataformas"> <!-- Caja plataformas -->
 
         <div>
 
@@ -170,24 +170,42 @@
 
           <section>
             <form>
-              <input type="checkbox" name="plataforma" id="brilliant">
-              <label for="brilliant">Brilliant</label>
-              <input type="checkbox" name="plataforma" id="coderhouse">
-              <label for="coderhouse">CoderHouse</label>
-              <input type="checkbox" name="plataforma" id="crehana">
-              <label for="crehana">Crehana</label>
-              <input type="checkbox" name="plataforma" id="domestika">
-              <label for="domestika">Domestika</label>
-              <input type="checkbox" name="plataforma" id="google-activate">
-              <label for="google-activate">Google Activate</label>
-              <input type="checkbox" name="plataforma" id="platzi">
-              <label for="platzi">Platzi</label>
-              <input type="checkbox" name="plataforma" id="skillshare">
-              <label for="skillshare">Skillshare</label>
-              <input type="checkbox" name="plataforma" id="udemy">
-              <label for="udemy">Udemy</label>
-              <input type="checkbox" name="plataforma" id="youtube">
-              <label for="youtube">YouTube</label>
+              <div>
+                <input type="checkbox" name="plataforma" id="brilliant">
+                <label for="brilliant">Brilliant</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="coderhouse">
+                <label for="coderhouse">CoderHouse</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="crehana">
+                <label for="crehana">Crehana</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="domestika">
+                <label for="domestika">Domestika</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="google-activate">
+                <label for="google-activate">Google Activate</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="platzi">
+                <label for="platzi">Platzi</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="skillshare">
+                <label for="skillshare">Skillshare</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="udemy">
+                <label for="udemy">Udemy</label>
+              </div>
+              <div>
+                <input type="checkbox" name="plataforma" id="youtube">
+                <label for="youtube">YouTube</label>
+              </div>
             </form>
           </section>
 
@@ -195,7 +213,7 @@
 
       </div>
 
-      <div> <!-- Caja categorías -->
+      <div id="cajaCategorias"> <!-- Caja categorías -->
 
         <div>
 
@@ -209,18 +227,30 @@
 
           <section>
             <form>
-              <input type="checkbox" name="categoria" id="arte-diseno">
-              <label for="arte-diseno">Arte y Diseño</label>
-              <input type="checkbox" name="categoria" id="idiomas">
-              <label for="idiomas">Idiomas</label>
-              <input type="checkbox" name="categoria" id="marketing">
-              <label for="marketing">Marketing</label>
-              <input type="checkbox" name="categoria" id="programacion">
-              <label for="programacion">Programación</label>
-              <input type="checkbox" name="categoria" id="sonido">
-              <label for="sonido">Sonido</label>
-              <input type="checkbox" name="categoria" id="videojuegos">
-              <label for="videojuegos">Videojuegos</label>
+              <div>
+                <input type="checkbox" name="categoria" id="arte-diseno">
+                <label for="arte-diseno">Arte y Diseño</label>
+              </div>
+              <div>
+                <input type="checkbox" name="categoria" id="idiomas">
+                <label for="idiomas">Idiomas</label>
+              </div>
+              <div>
+                <input type="checkbox" name="categoria" id="marketing">
+                <label for="marketing">Marketing</label>
+              </div>
+              <div>
+                <input type="checkbox" name="categoria" id="programacion">
+                <label for="programacion">Programación</label>
+              </div>
+              <div>
+                <input type="checkbox" name="categoria" id="sonido">
+                <label for="sonido">Sonido</label>
+              </div>
+              <div>
+                <input type="checkbox" name="categoria" id="videojuegos">
+                <label for="videojuegos">Videojuegos</label>
+              </div>
             </form>
           </section>
 
@@ -228,7 +258,7 @@
 
       </div>
 
-      <div> <!-- Caja subcategorías -->
+      <div id="cajaSubcategorias"> <!-- Caja subcategorías -->
 
         <div>
 
@@ -245,102 +275,198 @@
             <form> <!-- Estas irían cambiando dinámicamente según las categorías que el usuario elija -->
 
               <h4>Arte y Diseño</h4>
-              <input type="checkbox" name="subcategoria" id="adobe-photoshop">
-              <label for="adobe-photoshop">Adobe Photoshop</label>
-              <input type="checkbox" name="subcategoria" id="adobe-illustrator">
-              <label for="adobe-illustrator">Adobe Illustrator</label>
-              <input type="checkbox" name="subcategoria" id="blender-3d">
-              <label for="blender-3d">Blender 3D</label>
-              <input type="checkbox" name="subcategoria" id="concept-art-dibujo-digital">
-              <label for="concept-art-dibujo-digital">Concept Art y Dibujo Digital</label>
-              <input type="checkbox" name="subcategoria" id="dibujo-lapiz">
-              <label for="dibujo-lapiz">Dibujo a Lápiz</label>
-              <input type="checkbox" name="subcategoria" id="dibujo-acuarelas">
-              <label for="dibujo-acuarelas">Dibujo con Acuarelas</label>
-
+              <div>
+                <input type="checkbox" name="subcategoria" id="adobe-photoshop">
+                <label for="adobe-photoshop">Adobe Photoshop</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="adobe-illustrator">
+                <label for="adobe-illustrator">Adobe Illustrator</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="blender-3d">
+                <label for="blender-3d">Blender 3D</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="concept-art-dibujo-digital">
+                <label for="concept-art-dibujo-digital">Concept Art y Dibujo Digital</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="dibujo-lapiz">
+                <label for="dibujo-lapiz">Dibujo a Lápiz</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="dibujo-acuarelas">
+                <label for="dibujo-acuarelas">Dibujo con Acuarelas</label>
+              </div>
+            
               <h4>Idiomas</h4>
-              <input type="checkbox" name="subcategoria" id="aleman">
-              <label for="aleman">Alemán</label>
-              <input type="checkbox" name="subcategoria" id="chino">
-              <label for="chino">Chino</label>
-              <input type="checkbox" name="subcategoria" id="espanol">
-              <label for="espanol">Español</label>
-              <input type="checkbox" name="subcategoria" id="frances">
-              <label for="frances">Francés</label>
-              <input type="checkbox" name="subcategoria" id="ingles">
-              <label for="ingles">Inglés</label>
-              <input type="checkbox" name="subcategoria" id="italiano">
-              <label for="italiano">Italiano</label>
-              <input type="checkbox" name="subcategoria" id="japones">
-              <label for="japones">Japonés</label>
-              <input type="checkbox" name="subcategoria" id="portugues">
-              <label for="portugues">Portugués</label>
+              <div>
+                <input type="checkbox" name="subcategoria" id="aleman">
+                <label for="aleman">Alemán</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="chino">
+                <label for="chino">Chino</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="espanol">
+                <label for="espanol">Español</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="frances">
+                <label for="frances">Francés</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="ingles">
+                <label for="ingles">Inglés</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="italiano">
+                <label for="italiano">Italiano</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="japones">
+                <label for="japones">Japonés</label>
+              </div>
+              <div>
+                <input type="checkbox" name="subcategoria" id="portugues">
+                <label for="portugues">Portugués</label>
+              </div>
 
-              <h4>Marketing</h4>
-              <input type="checkbox" name="subcategoria" id="seo">
-              <label for="seo">SEO</label>
-              <input type="checkbox" name="subcategoria" id="redes-sociales">
-              <label for="redes-sociales">Redes Sociales</label>
-              <input type="checkbox" name="subcategoria" id="marketing-digital">
-              <label for="marketing-digital">Marketing Digital</label>
-              <input type="checkbox" name="subcategoria" id="email-marketing">
-              <label for="email-marketing">Email Marketing</label>
-              <input type="checkbox" name="subcategoria" id="analitica-web">
-              <label for="analitica-web">Analítica Web</label>
-              <input type="checkbox" name="subcategoria" id="publicidad-online">
-              <label for="publicidad-online">Publicidad Online</label>
-
-              <h4>Programación</h4>
-              <input type="checkbox" name="subcategoria" id="csharp">
-              <label for="csharp">C#</label>
-              <input type="checkbox" name="subcategoria" id="css">
-              <label for="css">CSS</label>
-              <input type="checkbox" name="subcategoria" id="desarrollo-web">
-              <label for="desarrollo-web">Desarrollo Web</label>
-              <input type="checkbox" name="subcategoria" id="html">
-              <label for="html">HTML</label>
-              <input type="checkbox" name="subcategoria" id="java">
-              <label for="java">Java</label>
-              <input type="checkbox" name="subcategoria" id="javascript">
-              <label for="javascript">JavaScript</label>
-              <input type="checkbox" name="subcategoria" id="python">
-              <label for="python">Python</label>
-
-              <h4>Sonido</h4>
-              <input type="checkbox" name="subcategoria" id="edicion-audio">
-              <label for="edicion-audio">Edición de Audio</label>
-              <input type="checkbox" name="subcategoria" id="flauta">
-              <label for="flauta">Flauta</label>
-              <input type="checkbox" name="subcategoria" id="guitarra">
-              <label for="guitarra">Guitarra</label>
-              <input type="checkbox" name="subcategoria" id="grabacion">
-              <label for="grabacion">Grabación</label>
-              <input type="checkbox" name="subcategoria" id="masterizacion">
-              <label for="masterizacion">Masterización</label>
-              <input type="checkbox" name="subcategoria" id="mezcla">
-              <label for="mezcla">Mezcla de Sonido</label>
-              <input type="checkbox" name="subcategoria" id="piano">
-              <label for="piano">Piano</label>
-              <input type="checkbox" name="subcategoria" id="produccion-musical">
-              <label for="produccion-musical">Producción Musical</label>
-
-              <h4>Videojuegos</h4>
-              <input type="checkbox" name="subcategoria" id="arte-juegos">
-              <label for="arte-juegos">Arte para Juegos</label>
-              <input type="checkbox" name="subcategoria" id="diseno-niveles">
-              <label for="diseno-niveles">Diseño de Niveles</label>
-              <input type="checkbox" name="subcategoria" id="game-design">
-              <label for="game-design">Game Design</label>
-              <input type="checkbox" name="subcategoria" id="programacion-juegos">
-              <label for="programacion-juegos">Programación de Juegos</label>
-              <input type="checkbox" name="subcategoria" id="realidad-virtual">
-              <label for="realidad-virtual">Realidad Virtual</label>
-              <input type="checkbox" name="subcategoria" id="testeo-juegos">
-              <label for="testeo-juegos">Testeo de Juegos</label>
-              <input type="checkbox" name="subcategoria" id="unity">
-              <label for="unity">Unity</label>
-              <input type="checkbox" name="subcategoria" id="unreal-engine">
-              <label for="unreal-engine">Unreal Engine</label>
+              <form>
+                <div>
+                  <h4>Marketing</h4>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="seo">
+                    <label for="seo">SEO</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="redes-sociales">
+                    <label for="redes-sociales">Redes Sociales</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="marketing-digital">
+                    <label for="marketing-digital">Marketing Digital</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="email-marketing">
+                    <label for="email-marketing">Email Marketing</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="analitica-web">
+                    <label for="analitica-web">Analítica Web</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="publicidad-online">
+                    <label for="publicidad-online">Publicidad Online</label>
+                  </div>
+                </div>
+              
+                <div>
+                  <h4>Programación</h4>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="csharp">
+                    <label for="csharp">C#</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="css">
+                    <label for="css">CSS</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="desarrollo-web">
+                    <label for="desarrollo-web">Desarrollo Web</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="html">
+                    <label for="html">HTML</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="java">
+                    <label for="java">Java</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="javascript">
+                    <label for="javascript">JavaScript</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="python">
+                    <label for="python">Python</label>
+                  </div>
+                </div>
+              
+                <div>
+                  <h4>Sonido</h4>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="edicion-audio">
+                    <label for="edicion-audio">Edición de Audio</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="flauta">
+                    <label for="flauta">Flauta</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="guitarra">
+                    <label for="guitarra">Guitarra</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="grabacion">
+                    <label for="grabacion">Grabación</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="masterizacion">
+                    <label for="masterizacion">Masterización</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="mezcla">
+                    <label for="mezcla">Mezcla de Sonido</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="piano">
+                    <label for="piano">Piano</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="produccion-musical">
+                    <label for="produccion-musical">Producción Musical</label>
+                  </div>
+                </div>
+              
+                <div>
+                  <h4>Videojuegos</h4>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="arte-juegos">
+                    <label for="arte-juegos">Arte para Juegos</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="diseno-niveles">
+                    <label for="diseno-niveles">Diseño de Niveles</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="game-design">
+                    <label for="game-design">Game Design</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="programacion-juegos">
+                    <label for="programacion-juegos">Programación de Juegos</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="realidad-virtual">
+                    <label for="realidad-virtual">Realidad Virtual</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="testeo-juegos">
+                    <label for="testeo-juegos">Testeo de Juegos</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="unity">
+                    <label for="unity">Unity</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="subcategoria" id="unreal-engine">
+                    <label for="unreal-engine">Unreal Engine</label>
+                  </div>
+                </div>
+              </form>
 
             </form>
 
@@ -350,7 +476,7 @@
 
       </div>
 
-      <div> <!-- Caja resultados -->
+      <div id="cajaResultados"> <!-- Caja resultados -->
 
         <div>
 
@@ -448,11 +574,11 @@
 
     </div>
 
-    <div> <!-- Caja del buscador -->
+    <div id="cajaBuscador"> <!-- Caja del buscador -->
       <input type="text" id="buscador" placeholder="Busca tu curso">
     </div>
 
-    <div> <!-- Caja del botón del explorador -->
+    <div id="cajaBotonExplorador"> <!-- Caja del botón del explorador -->
       <a href="./explorador.html"><h3>Explorar todos los cursos</h3></a>
     </div>
 

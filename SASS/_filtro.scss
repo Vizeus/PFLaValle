@@ -1,4 +1,241 @@
-#cuerpoDelFiltro
-{
-    margin-top: 140px;
+// Estilos para el cuerpo y la grilla
+#cuerpoDelFiltro {
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    /* Áreas de la cuadrícula */
+    ". cajaHeader ."
+    "cajaDePago cajaDePago cajaDePago"
+    "cajaModalidad cajaModalidad cajaModalidad"
+    "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros"
+    "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros"
+    "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros"
+    "cajaBuscador cajaBuscador cajaBuscador"
+    "cajaBotonExplorador cajaBotonExplorador cajaBotonExplorador";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  height: 60vh;
+  margin-top: 140px;
+
+  // Estilos para el encabezado
+  #cajaHeader {
+    background-color: $secondary-color;
+    padding: 10px;
+    grid-area: cajaHeader;
+
+    h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  // Estilos para la caja de pago
+  #cajaDePago {
+    background-color: #fff;
+    padding: 20px;
+    grid-area: cajaDePago;
+    background-color: $secondary-color;
+
+    label {
+      margin-right: 10px;
+    }
+  }
+
+  // Estilos para la caja de modalidad
+  #cajaModalidad {
+    background-color: #fff;
+    padding: 20px;
+    grid-area: cajaModalidad;
+    background-color: $secondary-color;
+
+    label {
+      margin-right: 10px;
+    }
+  }
+
+  // Estilos para la caja contenedora de los 4 cuadros
+  #cajaConteiner4Cuadros {
+    grid-area: cajaConteiner4Cuadros;
+    display: flex;
+    justify-content: space-between; // Centra los elementos horizontalmente
+    height: 500px;
+  }
+
+  // Estilos para la caja de plataformas
+  #cajaPlataformas {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 15%;
+    background-color: $secondary-color;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+  }
+  
+
+  // Estilos para la caja de categorías
+  #cajaCategorias {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 20%;
+    background-color: $secondary-color;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+
+  // Estilos para la caja de subcategorías
+  #cajaSubcategorias {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 20%;
+    background-color: $secondary-color;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+
+  // Estilos para la caja de resultados
+  #cajaResultados {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 30%;
+    background-color: $secondary-color;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    // Estilos para las cartas de cursos específicos
+    > div {
+      display: flex;
+      margin-bottom: 20px;
+
+      > div {
+        margin-right: 20px;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      h4 {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+  }
+
+  // Estilos para la caja del buscador
+  #cajaBuscador {
+    background-color: #fff;
+    padding: 20px;
+    grid-area: cajaBuscador;
+    display: flex;
+    justify-content: center; // Centra los elementos horizontalmente
+    align-items: center; // Centra los elementos verticalmente
+    background-color: $secondary-color;
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      border-radius: 20px;
+    }
+  }
+
+  // Estilos para la caja del botón del explorador
+  #cajaBotonExplorador {
+    background-color: #fff;
+    padding: 20px;
+    grid-area: cajaBotonExplorador;
+    display: flex;
+    justify-content: center; // Centra los elementos horizontalmente
+    align-items: center; // Centra los elementos verticalmente
+    background-color: $secondary-color;
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
 }
+
+// Estilo del pie de página
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  margin-top: 600px;
+
+  div {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilo del cuerpo para pantallas pequeñas */
+  @media (max-width: 650px) {
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 46rem;
+  }
+}
+

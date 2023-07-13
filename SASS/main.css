@@ -209,6 +209,9 @@
 #cuerpo #textoPrincipal {
   grid-area: textoPrincipal;
   font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #cuerpo #subcategoriaDestacada {
   grid-area: subcategoriaDestacada;
@@ -224,6 +227,9 @@
   font-size: 13px;
   font-weight: normal;
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #cuerpo .imagenDeDestacados {
   width: 150px;
@@ -248,7 +254,193 @@
   }
 }
 #cuerpoDelFiltro {
+  padding: 20px;
+  display: grid;
+  grid-template-areas: ". cajaHeader ." "cajaDePago cajaDePago cajaDePago" "cajaModalidad cajaModalidad cajaModalidad" "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros" "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros" "cajaConteiner4Cuadros cajaConteiner4Cuadros cajaConteiner4Cuadros" "cajaBuscador cajaBuscador cajaBuscador" "cajaBotonExplorador cajaBotonExplorador cajaBotonExplorador";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  height: 60vh;
   margin-top: 140px;
+}
+#cuerpoDelFiltro #cajaHeader {
+  background-color: #d2d5d9;
+  padding: 10px;
+  grid-area: cajaHeader;
+}
+#cuerpoDelFiltro #cajaHeader h2 {
+  font-size: 24px;
+  margin: 0;
+}
+#cuerpoDelFiltro #cajaHeader p {
+  font-size: 14px;
+  margin: 0;
+}
+#cuerpoDelFiltro #cajaDePago {
+  background-color: #fff;
+  padding: 20px;
+  grid-area: cajaDePago;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaDePago label {
+  margin-right: 10px;
+}
+#cuerpoDelFiltro #cajaModalidad {
+  background-color: #fff;
+  padding: 20px;
+  grid-area: cajaModalidad;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaModalidad label {
+  margin-right: 10px;
+}
+#cuerpoDelFiltro #cajaConteiner4Cuadros {
+  grid-area: cajaConteiner4Cuadros;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+#cuerpoDelFiltro #cajaPlataformas {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 15%;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaPlataformas h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#cuerpoDelFiltro #cajaCategorias {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 20%;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaCategorias h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#cuerpoDelFiltro #cajaCategorias input[type=checkbox] {
+  margin-right: 10px;
+}
+#cuerpoDelFiltro #cajaSubcategorias {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 20%;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaSubcategorias h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#cuerpoDelFiltro #cajaSubcategorias h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#cuerpoDelFiltro #cajaSubcategorias input[type=checkbox] {
+  margin-right: 10px;
+}
+#cuerpoDelFiltro #cajaResultados {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 30%;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaResultados h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#cuerpoDelFiltro #cajaResultados > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+#cuerpoDelFiltro #cajaResultados > div > div {
+  margin-right: 20px;
+}
+#cuerpoDelFiltro #cajaResultados > div img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cuerpoDelFiltro #cajaResultados > div h4 {
+  font-size: 16px;
+  margin: 0;
+}
+#cuerpoDelFiltro #cajaResultados > div p {
+  font-size: 14px;
+  margin: 0;
+}
+#cuerpoDelFiltro #cajaBuscador {
+  background-color: #fff;
+  padding: 20px;
+  grid-area: cajaBuscador;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaBuscador input[type=text] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+#cuerpoDelFiltro #cajaBotonExplorador {
+  background-color: #fff;
+  padding: 20px;
+  grid-area: cajaBotonExplorador;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2d5d9;
+}
+#cuerpoDelFiltro #cajaBotonExplorador a {
+  text-decoration: none;
+  color: #333;
+}
+#cuerpoDelFiltro #cajaBotonExplorador h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  margin-top: 600px;
+  /* Estilo del cuerpo para pantallas pequeñas */
+}
+footer div {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 650px) {
+  footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 46rem;
+  }
 }
 
 * {

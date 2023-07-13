@@ -65,6 +65,9 @@
     #textoPrincipal {
       grid-area: textoPrincipal;
       font-size: 13px;
+      display: flex;
+      justify-content: center; // Centra los elementos horizontalmente
+      align-items: center; // Centra los elementos verticalmente
     }
   
     #subcategoriaDestacada {
@@ -84,6 +87,9 @@
       font-size: 13px;
       font-weight: normal;
       font-style: italic;
+      display: flex;
+      justify-content: center; // Centra los elementos horizontalmente
+      align-items: center; // Centra los elementos verticalmente
     }
   
     .imagenDeDestacados {
